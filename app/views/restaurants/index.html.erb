@@ -1,0 +1,95 @@
+<section class="header-search hide-mb" id="header-search-react">
+  <div class="container">
+    <%= form_tag restaurants_path, method: :get, class: "row g-3" do %>
+      <div class="col-md-4">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="location-addon"><i class="fas fa-map-marker-alt"></i></span>
+          </div>
+          <%= text_field_tag :location, params[:location], class: "form-control", placeholder: "Enter Location" %>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="search-addon"><i class="fas fa-search"></i></span>
+          </div>
+          <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Search for restaurants, cuisines..." %>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <%= button_tag "Search", class: "btn btn-primary w-100", type: "submit" %>
+      </div>
+    <% end %>
+  </div>
+</section>
+
+<h2 class="text-center">Restaurants</h2>
+<div class="container"><div class="change-location"><h4 class="heading">Results shown are for <span class="locality"><b><%= @location.present? == true ? @location.name : "All India" %></b></span></h4></div></div>
+<% if @restaurants.present? %>
+    <div class="container">
+      <div class="restaurant-cards">
+        <% @locations.each do |location| %>
+            <% location_restaurants = @restaurants.select { |restaurant| restaurant.location_id == location.id } %>
+            <% if location_restaurants.present? %>
+                <% location_restaurants.each do |restaurant| %>
+                <article class="store">
+                    <div class="top-section">
+                    <div class="cover-image-holder">
+                        <a class="photo-link rel-handled" href="<%= restaurant_path(restaurant) %>">
+                        <% if restaurant.cover_img.present? %>
+                             <%= image_tag restaurant.cover_img, class: "cover-image err-handled" %>
+                        <% else %>
+                            <img loading="lazy" src="https://lh3.googleusercontent.com/4MFvaZ1Oj_aTp9TBJx3U9feX9fux4RJqHXmINzpDgMDIVuxVc_uChyi287Wh4DXM-OXuPgv10jGK_D83MRKRi_UGGcE=w400-rw" alt="<%= restaurant.name %>" class="cover-image err-handled" onerror="this.alt='';recordBrokenImages(this,false,5);">
+                        <% end %>
+                        </a>
+                        <header class="store-header">
+                        <div class="merchant-logo-holder">
+                            <img loading="lazy" src="<%= restaurant.logo_img %>" alt="<%= restaurant.name %>" class="merchant-logo err-handled" onerror="this.alt='';recordBrokenImages(this,false,1);">
+                        </div>
+                        <div class="basic-info">
+                            <h2 title="<%= restaurant.name %>" class="merchant-name">
+                            <span>
+                                <a href="<%= restaurant_path(restaurant) %>" class="rel-handled"><%= restaurant.name %></a>
+                            </span>
+                            </h2>
+                            <p class="merchant-location">
+                            <span>
+                                <%= restaurant.address %>, <%= location.name %>
+                            </span>
+                            </p>
+                            <p class="merchant-subcategory">
+                            <a class="white-text rel-handled" target="_blank" href="https://magicpin.in/india/New-delhi/West-end/Budget-eats/" rel="noopener"><%= restaurant.price_range %> for two
+                            </p>
+                            </a>
+                        </div>
+                        </header>
+                    </div>
+                    <section class="store-info">
+                        <div class="available-services">
+                        <div class="tags">
+                            <div class="tag">
+                            <p class="tag-title">Cuisines:</p>
+                            <p class="tag-content">
+                            <% if restaurant.cuisines.present? %>
+                                <% restaurant_cuisines_array = JSON.parse(restaurant.cuisines) %>
+                                <% restaurant_cuisines_array.each do |cuisine| %>
+                                    <a href="#" class="hyper-link rel-handled"><%= cuisine %></a>
+                                <% end %>
+                            <% end %>
+                            </p>
+                            </div>
+                        </div>
+                        </div>
+                    </section>
+                    </div>
+                    <div class="actionables"></div>
+                </article>
+                <% end %>
+            <% end %>
+        <% end %>
+      </div>
+    </div>
+<% else %>
+  <p>No restaurants found.</p>
+<% end %>

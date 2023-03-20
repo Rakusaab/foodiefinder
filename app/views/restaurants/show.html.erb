@@ -1,0 +1,106 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="restaurant-details">
+        <h1><%= @restaurant.name %></h1>
+
+        <% if @restaurant.cover_img.present? %>
+          <%= image_tag @restaurant.cover_img, class: "cover-image err-handled" %>
+        <% end %>
+
+        <div class="row">
+          <div class="col-md-6">
+            <p><strong>Phone:</strong> 
+            <% if @restaurant.phone.present? %>
+                <% restaurant_phone_array = JSON.parse(@restaurant.phone)  %>
+                <% restaurant_phone_array.each do |phone| %>
+                    <a href="#" class="hyper-link rel-handled"><%= phone %></a>
+                <% end %>
+            <% end %>
+            </p>
+            <p><strong>Price range:</strong> <%= @restaurant.price_range %></p>
+            <p><strong>Rating:</strong> <%= @restaurant.rating %></p>
+          </div>
+          <div class="col-md-6">
+            <p><strong>Cuisines:</strong> 
+                <p class="tag-content">
+                    <% if @restaurant.cuisines.present? %>
+                        <% restaurant_cuisines_array = JSON.parse(@restaurant.cuisines) %>
+                        <% restaurant_cuisines_array.each do |cuisine| %>
+                            <a href="#" class="hyper-link rel-handled"><%= cuisine %></a>
+                            
+                        <% end %>
+                    <% end %>
+                </p>
+            </p>
+            <p><strong>Save percentage:</strong> <%= @restaurant.save_percentage %></p>
+            <p><strong>Location:</strong> <%= @restaurant.location.name %></p>
+          </div>
+        </div>
+
+        <p class="description"><%= @restaurant.description %></p>
+
+        <h2>More Like This</h2>
+
+        <% if @more_like_this.present? %>
+          <ul class="related-content-list">
+            <% @more_like_this.each do |mlt| %>
+              <li>
+              <a class="photo-link rel-handled" href="<%= mlt.related_content_id %>">
+              <% @rest = Restaurant.find_by_id(mlt.related_content_id) %>
+                  <% if @rest.cover_img.present? %>
+                        <%= image_tag(@rest.cover_img) %>
+                  <% end %>
+              
+              <b><%= mlt.restaurant_name %></b></a></li>
+            <% end %>
+          </ul>
+        <% else %>
+          <p>No related content found.</p>
+        <% end %>
+
+        <h2>Images</h2>
+
+        <% if @restaurant_images.present? %>
+          <div class="restaurant-images">
+            <% @restaurant_images.each do |image| %>
+              <% if image.image.present? %>
+                  <%= image_tag(image.image) %>
+              <% end %>
+            <% end %>
+          </div>
+        <% else %>
+          <p>No images found.</p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+.cover-image{
+    float:right;
+    width: 50%;
+    border-radius: 15px;
+}
+.related-content-list li{
+    padding: 5px;
+    position: relative;
+}
+.related-content-list li b{
+    ont-weight: bolder;
+    position: absolute;
+    z-index: 999;
+    width: 97%;
+    left: 0px;
+    background: #6fef20;
+    margin: auto;
+}
+.related-content-list li img{
+    height: 120px;
+    width: 160px;
+}
+.related-content-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+</style>
