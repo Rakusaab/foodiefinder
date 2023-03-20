@@ -1,0 +1,29 @@
+<%= form_with(model: @url, local: true, class: "needs-validation", novalidate: true) do |form| %>
+  <% if @url.errors.any? %>
+    <div class="alert alert-danger">
+      <h4><%= pluralize(@url.errors.count, "error") %> prohibited this url from being saved:</h4>
+      <ul>
+        <% @url.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+<div class="container">
+  <div class="form-floating mb-3">
+    <%= form.label :name %>
+    <%= form.text_field :name, class: "form-control", id: "name", placeholder: "Magicpin", value: "Magicpin", required: true %>
+    <div class="invalid-feedback">Please enter a name for the URL.</div>
+  </div>
+
+  <div class="form-floating mb-3">
+    <%= form.label :url %>
+    <%= form.text_field :url, required: true, class: "form-control", placeholder: "Enter a Magicpin listing URL or detail page URL " %>
+    <small class="text-muted">Examples: ListingURL('https://magicpin.in/india/New-Delhi/Panchsheel-Park/Restaurant/')    DetailedURL(https://magicpin.in/New-Delhi/Panchsheel-Park/Restaurant/Wonderbites/store/15399b1/?utm_source=aroundyou).</small>
+  </div>
+
+  <div class="d-flex justify-content-end">
+    <%= form.submit "Save", class: "btn btn-primary" %>
+  </div>
+</div>
+<% end %>

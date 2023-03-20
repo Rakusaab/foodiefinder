@@ -1,4 +1,6 @@
 class RestaurantsController < ApplicationController
+  before_action :authenticate_user!
+  before_action -> { require_role(:admin) }, only: [:admin_index]
   def index
     @locations = Location.all.order(name: :asc)
     @restaurants = Restaurant.all.includes(:location).order(name: :asc)

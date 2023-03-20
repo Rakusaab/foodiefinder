@@ -56,6 +56,9 @@
     line-height: 1.25em;
     cursor: pointer;
 }
+.navbar{
+  background-color: #e2e2e2!important;
+}
 .tag-content .hyper-link {
     border-radius: 8px;
     background-color: #fff;
@@ -376,4 +379,31 @@ body {
   .store {
     width: 100%;
   }
+}
+
+.cover-image{
+  float:right;
+  width: 50%;
+  border-radius: 15px;
+}
+.related-content-list li{
+  padding: 5px;
+  position: relative;
+}
+.related-content-list li b{
+  font-weight: bolder;
+  position: absolute;
+  z-index: 999;
+  width: 97%;
+  left: 0px;
+  background: #6fef20;
+  margin: auto;
+}
+.related-content-list li img{
+  height: 120px;
+  width: 160px;
+}
+.related-content-list{
+  display: flex;
+  flex-wrap: wrap;
 }

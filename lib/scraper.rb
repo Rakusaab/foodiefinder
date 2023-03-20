@@ -15,14 +15,25 @@ class Scraper
   end
 
   def restaurant_data_magicpin(url, max_depth = 1, depth = 1)
+    restaurants = []
     page = @agent.get(url)
-    if ! page.uri.to_s.end_with?('/Restaurant/')
-      puts "This is not a restaurant listing URL"
-      related_restaurant(page, nil)
-      return
+    uri = URI.parse(url)
+    if uri.scheme.nil? || uri.host.nil?
+      puts "Invalid URL"
+      return restaurants
+    elsif !uri.path.end_with?('/Restaurant/')
+      begin
+        puts "This is not a restaurant listing URL"
+        more_like_this = related_restaurant(page, nil)
+        restaurant = more_like_this
+      rescue => e
+        puts "Error occurred: #{e.message}"
+        # next
+      end
+      return restaurants << restaurant
     end
     
-    restaurants = []
+    
    
     page.search('.store').take(5).each do |restaurant_elem|
       begin
@@ -53,7 +64,8 @@ class Scraper
             description: restaurant_details[:description],
             address: restaurant_details[:address],
             more_like_this: restaurant_details[:more_like_this]
-          }
+          },
+          type: 'Listing'
         }
         restaurants << restaurant
       rescue => e

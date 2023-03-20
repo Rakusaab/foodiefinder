@@ -11,29 +11,15 @@ namespace :scrape do
       #   Restaurant.delete_all # Clear existing data from the database
   
       # Loop through the URLs and scrape data for each restaurant
-      urls = [
-        #  In Future we can use Zomato and Swiggy
-          # {'name': 'Zomato', 'url': 'https://www.zomato.com/bangalore/chef-bakers-5-marathahalli-bangalore/order'},
-          # {'name': 'Zomato', 'url': 'https://www.zomato.com/agra'},
-          # {'name': 'Zomato', 'url': 'https://www.zomato.com/bangalore/dominos-pizza-koramangala-5th-block-bangalore/order'},
-          # {'name': 'Swiggy', 'url': 'https://www.swiggy.com/restaurants/chef-bakers-chamundeswari-layout-vidyaranyapura-bangalore-352506'},
-        #  In Future we can use Zomato and Swiggy
-        {'name': 'Magicpin', 'url': 'https://magicpin.in/india/New-Delhi/Connaught-Place-(Cp)/Restaurant/'}
-        # {'name': 'Magicpin', 'url': 'https://magicpin.in/New-Delhi/Panchsheel-Park/Restaurant/Beliram-Degchiwala/store/619b/'}
-       ]
-  
-      urls.each do |url|
-        scraper = Scraper.new(url[:url])
+      # urls = [
+      #   Url.all.each do |url|
+      #     {'name': url.name, 'url': url.url}
+      #   end
+      #  ]
+       Url.all.each do |url|
+        scraper = Scraper.new(url.url)
         # data = scraper.scrape
-        data = scraper.restaurant_data_magicpin(url[:url])
-        if url[:name] == "Zomato"
-          data = scraper.restaurant_data_zomato(url[:url])
-        elsif url[:name] == "Swiggy"
-          data = scraper.restaurant_data_swiggy(url[:url])
-        elsif url[:name] == "Magicpin"
-        else
-          data = scraper.restaurant_data_anon(url[:url])
-        end
+        data = scraper.restaurant_data_magicpin(url.url)
 
     # Creating Output file to test the Data uncomment to test
     File.write("output.json", JSON.pretty_generate(data))
@@ -43,6 +29,7 @@ namespace :scrape do
       end
     end
     def create_restaurant(data)
+      
       data.each do |restaurant_data|
         location_data = restaurant_data[:restaurant][:location]
         # Find for Location first
@@ -52,7 +39,7 @@ namespace :scrape do
         # Getting location Object to store its id and updating the params object
           restaurant_data[:restaurant][:location] = location
         # Getting location Object to store its id
-
+        File.write("output.json", JSON.pretty_generate(restaurant_data))
         restaurant = Restaurant.find_or_create_by(name: restaurant_data[:restaurant][:name]) do |r|
           r.attributes = restaurant_params(restaurant_data)
         end

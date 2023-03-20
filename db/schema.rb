@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_18_175240) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_20_105348) do
   create_table "locations", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
     t.string "address"
@@ -23,15 +23,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_18_175240) do
 
   create_table "more_like_this", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.bigint "restaurant_id", null: false
+    t.string "restaurant_name"
+    t.integer "related_content_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "related_content_id"
-    t.string "restaurant_name"
     t.index ["restaurant_id"], name: "index_more_like_this_on_restaurant_id"
   end
 
   create_table "restaurant_images", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.bigint "restaurant_id"
+    t.bigint "restaurant_id", null: false
     t.string "image"
     t.string "name"
     t.datetime "created_at", null: false
@@ -54,6 +54,26 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_18_175240) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["location_id"], name: "index_restaurants_on_location_id"
+  end
+
+  create_table "urls", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "name"
+    t.string "url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "role"
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "more_like_this", "restaurants"

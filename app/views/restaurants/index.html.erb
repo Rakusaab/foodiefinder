@@ -18,14 +18,16 @@
         </div>
       </div>
       <div class="col-md-3">
-        <%= button_tag "Search", class: "btn btn-primary w-100", type: "submit" %>
+        <%= button_tag "Search", class: "btn btn-success w-100", type: "submit" %>
       </div>
     <% end %>
   </div>
 </section>
 
 <h2 class="text-center">Restaurants</h2>
-<div class="container"><div class="change-location"><h4 class="heading">Results shown are for <span class="locality"><b><%= @location.present? == true ? @location.name : "All India" %></b></span></h4></div></div>
+<div class="container"><div class="change-location"><h4 class="heading">Results shown are for <span class="locality"><b><%= @location.present? == true ? @location.name : "All India" %></b></span> <a href="/urls/new" class="rel-handled"><button class="btn btn-success"> Start Srapping! </button></a></h4>
+
+</div></div>
 <% if @restaurants.present? %>
     <div class="container">
       <div class="restaurant-cards">
@@ -91,5 +93,5 @@
       </div>
     </div>
 <% else %>
-  <p>No restaurants found.</p>
+  <p class="text-center">No restaurants found. Click  <a href="/urls/new" class="rel-handled">here</a> to scrape from magicpin :)</p>
 <% end %>

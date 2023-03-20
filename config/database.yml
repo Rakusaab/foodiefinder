@@ -6,7 +6,7 @@ default: &default
   password: Root@123
   host: localhost
   port: 3306
-  database: foodie_finder
+  database: foodie
 
 development:
   <<: *default
