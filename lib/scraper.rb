@@ -15,13 +15,14 @@ class Scraper
   end
 
   def restaurant_data_magicpin(url, max_depth = 1, depth = 1)
+    puts url
     restaurants = []
     page = @agent.get(url)
     uri = URI.parse(url)
     if uri.scheme.nil? || uri.host.nil?
       puts "Invalid URL"
       return restaurants
-    elsif !uri.path.end_with?('/Restaurant/')
+    elsif  !page.uri.to_s.end_with?('/Restaurant/') && !page.uri.to_s.end_with?('/india/')
       begin
         puts "This is not a restaurant listing URL"
         more_like_this = related_restaurant(page, nil)
@@ -30,50 +31,50 @@ class Scraper
         puts "Error occurred: #{e.message}"
         # next
       end
-      return restaurants << restaurant
-    end
-    
-    
-   
-    page.search('.store').take(5).each do |restaurant_elem|
-      begin
-        name = restaurant_elem.search('.merchant-name span a').text.strip if restaurant_elem.search('.merchant-name span a').present?
-        location = restaurant_elem.at('p.merchant-location').text.strip if restaurant_elem.at('p.merchant-location').present?
-        cuisines = restaurant_elem.search('.store-info .tags .tag:has(p.tag-title:contains("Cuisines:")) a').map { |cuisine| cuisine.text.strip }.reject(&:empty?) if restaurant_elem.search('.store-info .tags .tag:has(p.tag-title:contains("Cuisines:")) a').present?
-        save_percentage = restaurant_elem.search('.save-percent').text.strip if restaurant_elem.search('.save-percent').present?
-        details_url = restaurant_elem.at('.merchant-name span a')['href']
-        # extract the cover image url
-        cover_img = restaurant_elem.at('.cover-image-holder img.cover-image')['src']
-
-        # extract the logo image url
-        logo_img = restaurant_elem.at('.merchant-logo-holder img.merchant-logo')['src']
-        restaurant_details = restaurant_details_extract_magicpin(details_url)
-
-        restaurant = {
-          restaurant: {
-            name: name,
-            location: location,
-            cuisines: cuisines,
-            cover_img: cover_img,
-            logo_img: logo_img,
-            save_percentage: save_percentage,
-            phone: restaurant_details[:phone],
-            images: restaurant_details[:images],
-            price_range: restaurant_details[:price_range],
-            rating: restaurant_details[:rating],
-            description: restaurant_details[:description],
-            address: restaurant_details[:address],
-            more_like_this: restaurant_details[:more_like_this]
-          },
-          type: 'Listing'
-        }
-        restaurants << restaurant
-      rescue => e
-        puts "Error occurred: #{e.message}"
-        next
-      end
-    end
+     restaurants << restaurant
+    else
+      puts "This is a restaurant listing URL2"
+      page.search('.store').take(5).each do |restaurant_elem|
+        begin
+          name = restaurant_elem.search('.merchant-name span a').text.strip if restaurant_elem.search('.merchant-name span a').present?
+          location = restaurant_elem.at('p.merchant-location').text.strip if restaurant_elem.at('p.merchant-location').present?
+          cuisines = restaurant_elem.search('.store-info .tags .tag:has(p.tag-title:contains("Cuisines:")) a').map { |cuisine| cuisine.text.strip }.reject(&:empty?) if restaurant_elem.search('.store-info .tags .tag:has(p.tag-title:contains("Cuisines:")) a').present?
+          save_percentage = restaurant_elem.search('.save-percent').text.strip if restaurant_elem.search('.save-percent').present?
+          details_url = restaurant_elem.at('.merchant-name span a')['href']
+          # extract the cover image url
+          cover_img = restaurant_elem.at('.cover-image-holder img.cover-image')['src']
   
+          # extract the logo image url
+          logo_img = restaurant_elem.at('.merchant-logo-holder img.merchant-logo')['src']
+          restaurant_details = restaurant_details_extract_magicpin(details_url)
+  
+          restaurant = {
+            restaurant: {
+              name: name,
+              location: location,
+              cuisines: cuisines,
+              cover_img: cover_img,
+              logo_img: logo_img,
+              save_percentage: save_percentage,
+              phone: restaurant_details[:phone],
+              images: restaurant_details[:images],
+              price_range: restaurant_details[:price_range],
+              rating: restaurant_details[:rating],
+              description: restaurant_details[:description],
+              address: restaurant_details[:address],
+              more_like_this: restaurant_details[:more_like_this]
+            },
+            type: 'Listing'
+          }
+          restaurants << restaurant
+        rescue => e
+          puts "Error occurred: #{e.message}"
+          next
+        end
+      end
+    
+    end
+   
     restaurants
   end
 
@@ -141,10 +142,6 @@ class Scraper
 
   def related_restaurant(details_url, cover_img)
     return if @visited_urls.include?(details_url)
-    # extract the cover image url
-    
-
-    # extract the logo image url
     @visited_urls.add(details_url)
     details_page = @agent.get(details_url)
     

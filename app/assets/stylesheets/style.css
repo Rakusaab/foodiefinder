@@ -59,6 +59,9 @@
 .navbar{
   background-color: #e2e2e2!important;
 }
+.text-muted{
+  color :red !important;
+}
 .tag-content .hyper-link {
     border-radius: 8px;
     background-color: #fff;

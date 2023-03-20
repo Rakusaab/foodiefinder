@@ -9,7 +9,12 @@ class UrlsController < ApplicationController
       @url = Url.new(url_params)
   
       if @url.save
-        redirect_to @url , notice: 'URL successfully Created.'
+        if system("bundle exec rake scrape:restaurants")
+          puts "Task executed successfully"
+        else
+          puts "Task failed"
+        end
+        redirect_to @url , notice: 'Task for this url has been executed successfully! Refresh the Home page now!'
       else
         render :new
       end
