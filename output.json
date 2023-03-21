@@ -1,422 +1,693 @@
-{
-  "restaurant": {
-    "name": "Eat Chintaamastu",
-    "location": "#<Location:0x00007ffbcc3fe740>",
-    "cuisines": null,
-    "cover_img": "https://lh3.googleusercontent.com/BMjY65SmJl_h0UkmJ_RxfgoBNMOiINaGfUbI5MxRhuc049I98eJ7-BRDrQZvfnlsMspqSigWFRyF_R4FJpFwE3qKEXJM9CG4A5ti0Rfj=w400-rw",
-    "logo_img": "https://lh3.googleusercontent.com/M6oIOba76-sOnObG3GJYCwp3gEF5N_nA2v9itI_vxajbMLtvxySs4hJwieM8QJtkv2XlkJ0Lp75P6ipleX686uW9wwsbLeuDPaov7bGJ=w100-rw",
-    "save_percentage": "Save 82%",
-    "phone": [
-      "+919871322756"
-    ],
-    "images": {
-      "images": [
-        {
-          "image": "https://lh3.googleusercontent.com/DFJqcps9IfBGFva4gIiq5gxnPoZt5bD1xVWTlbTncMyiflVrmWR4V5w_rhhmqYocYIWbT0kGpA6Gyxw-B27QyK7AYpo1iOQre3MZtpI=w192-rw",
-          "name": "DFJqcps9IfBGFva4gIiq5gxnPoZt5bD1xVWTlbTncMyiflVrmWR4V5w_rhhmqYocYIWbT0kGpA6Gyxw-B27QyK7AYpo1iOQre3MZtpI=w192-rw",
-          "restaurant_id": null
-        },
-        {
-          "image": "https://lh3.googleusercontent.com/XBsSUC5HwPpcN0R1pUE5DLC8P92JF3paqskWbpSTO1o96QcEbvLLWZpJw0z-czIWYnoSyklyDhFu0zxGZyswCj_yhD9FXYwgJySQVqg=w192-rw",
-          "name": "XBsSUC5HwPpcN0R1pUE5DLC8P92JF3paqskWbpSTO1o96QcEbvLLWZpJw0z-czIWYnoSyklyDhFu0zxGZyswCj_yhD9FXYwgJySQVqg=w192-rw",
-          "restaurant_id": null
-        },
-        {
-          "image": "https://lh3.googleusercontent.com/RMWnOEwdwTVE4BGc5iL5AycBsur5uCTrapnPi_ydLL4HQAuwSTw3wzflryRh5gmnjPlRILCh4WY4rob7JlJKUIraY4kUNjOLAcNn7gc=w192-rw",
-          "name": "RMWnOEwdwTVE4BGc5iL5AycBsur5uCTrapnPi_ydLL4HQAuwSTw3wzflryRh5gmnjPlRILCh4WY4rob7JlJKUIraY4kUNjOLAcNn7gc=w192-rw",
-          "restaurant_id": null
-        },
-        {
-          "image": "https://lh3.googleusercontent.com/DFJqcps9IfBGFva4gIiq5gxnPoZt5bD1xVWTlbTncMyiflVrmWR4V5w_rhhmqYocYIWbT0kGpA6Gyxw-B27QyK7AYpo1iOQre3MZtpI=w192-rw",
-          "name": "DFJqcps9IfBGFva4gIiq5gxnPoZt5bD1xVWTlbTncMyiflVrmWR4V5w_rhhmqYocYIWbT0kGpA6Gyxw-B27QyK7AYpo1iOQre3MZtpI=w192-rw",
-          "restaurant_id": null
-        },
-        {
-          "image": "https://lh3.googleusercontent.com/XBsSUC5HwPpcN0R1pUE5DLC8P92JF3paqskWbpSTO1o96QcEbvLLWZpJw0z-czIWYnoSyklyDhFu0zxGZyswCj_yhD9FXYwgJySQVqg=w192-rw",
-          "name": "XBsSUC5HwPpcN0R1pUE5DLC8P92JF3paqskWbpSTO1o96QcEbvLLWZpJw0z-czIWYnoSyklyDhFu0zxGZyswCj_yhD9FXYwgJySQVqg=w192-rw",
-          "restaurant_id": null
-        },
-        {
-          "image": "https://lh3.googleusercontent.com/RMWnOEwdwTVE4BGc5iL5AycBsur5uCTrapnPi_ydLL4HQAuwSTw3wzflryRh5gmnjPlRILCh4WY4rob7JlJKUIraY4kUNjOLAcNn7gc=w192-rw",
-          "name": "RMWnOEwdwTVE4BGc5iL5AycBsur5uCTrapnPi_ydLL4HQAuwSTw3wzflryRh5gmnjPlRILCh4WY4rob7JlJKUIraY4kUNjOLAcNn7gc=w192-rw",
-          "restaurant_id": null
-        }
-      ]
-    },
-    "price_range": "Cost for two: ₹100",
-    "rating": 3.1,
-    "description": "We will serve you, pure veg food",
-    "address": "633, Block A, Taimoor Nagar\n59- B shop no 2, New Friends Colony, New Delhi",
-    "more_like_this": {
-      "restaurant": [
-        {
-          "restaurant": {
-            "name": "Chinese Hut",
-            "location": "Vasundhara Enclave, New Delhi",
-            "cuisines": [
-              "Chinese",
-              "Chinese"
-            ],
-            "save_percentage": null,
-            "phone": null,
-            "cover_img": "https://lh3.googleusercontent.com/qkMXIfuoMIWXVCvklKPruA8J98ypYB5dcKWSzRPOhcToOvp03Fgn1Hs2plHpYFK2PVB9of6SgpSbfw4_LEZ6frpPsdvflSEjPPgEViwJvw=w250-rw",
-            "logo_img": "https://lh3.googleusercontent.com/6k69xUeOcU923vWzMB7i96vqLYT2Xbp78MKbvOGU4Yfk1Afnblv7FDK0trVKoYv0TQ_cKSq0qeqYgiwJ6Gm8O_Wr3TCjPYRVSKbMqVKOLw=w256-rw",
-            "images": {
-              "images": [
-
-              ]
-            },
-            "price_range": "Cost for two: ₹500",
-            "rating": 4.4,
-            "description": "Chinese Hut is a F&B-Casual Dining outlet that offers a wide variety of Chinese cuisine. The restaurant has a cozy and inviting atmosphere, with comfortable seating and a warm, welcoming staff. The menu features a variety of dishes, from traditional Chinese favorites to modern interpretations of classic dishes. The restaurant also offers a selection of drinks, including beer, wine, and specialty cocktails. Chinese Hut is the perfect place to enjoy a delicious meal with friends and family. The restaurant is open for lunch and dinner, and offers take-out and delivery services. Whether you're looking for a quick bite or a full meal, Chinese Hut is the perfect place to satisfy your cravings.",
-            "address": "G6, Vardhaman Plaza, Lsc Pocket B, Vasundhara Enclave, New Delhi"
+[
+  {
+    "restaurant": {
+      "name": "Chef Bakers",
+      "location": "Miyapur, Hyderabad",
+      "cuisines": [
+        "Cake",
+        "Cake"
+      ],
+      "save_percentage": null,
+      "phone": null,
+      "cover_img": null,
+      "logo_img": "https://lh3.googleusercontent.com/Bd7dC-YruEhTCZyEIpcvd-LroS5BIXY_njf5RPD7yhLJsACh7kML2FyIk89JYt03yYxsTYjlNv7f9Ox4VKC8nQwP7T-2xC41beis5gkC=w256-rw",
+      "images": {
+        "images": [
+          {
+            "image": "https://lh3.googleusercontent.com/kScpmvCaPt3AcFt3zLgeL1-zut-fnejkhRwOJMlcHXDTa_jGOsthLBcvZeRx6K_CTu61UQPV-1Hj_op45ZlUHFPFEVYda-LEc8YxWbAM=w192-rw",
+            "name": "kScpmvCaPt3AcFt3zLgeL1-zut-fnejkhRwOJMlcHXDTa_jGOsthLBcvZeRx6K_CTu61UQPV-1Hj_op45ZlUHFPFEVYda-LEc8YxWbAM=w192-rw",
+            "restaurant_id": null
+          },
+          {
+            "image": "https://lh3.googleusercontent.com/v43-QRt42sAPf9pf6W8lTF-WTKt-_aasMcGImfEdtpOJw-a06hT54V1uXIbo5nBrKgC960EHkZvGeMDSt6zytF6JEhERBxofyUMG-1oq=w192-rw",
+            "name": "v43-QRt42sAPf9pf6W8lTF-WTKt-_aasMcGImfEdtpOJw-a06hT54V1uXIbo5nBrKgC960EHkZvGeMDSt6zytF6JEhERBxofyUMG-1oq=w192-rw",
+            "restaurant_id": null
+          },
+          {
+            "image": "https://lh3.googleusercontent.com/BdLOwstsBeovnm9Dl3fOfaH89S2INBl1o8wfsD1zsa2vV9r-o9RaogVTmYcZSNr6EmkCQ2K83W3FHOpt4-W682_XK0YMBY6rGmA8nbVc=w192-rw",
+            "name": "BdLOwstsBeovnm9Dl3fOfaH89S2INBl1o8wfsD1zsa2vV9r-o9RaogVTmYcZSNr6EmkCQ2K83W3FHOpt4-W682_XK0YMBY6rGmA8nbVc=w192-rw",
+            "restaurant_id": null
+          },
+          {
+            "image": "https://lh3.googleusercontent.com/9XWQaMvMKX334v05LIwnX7NoIGRUtEtPLemxqY5atx9Y1pe-yw_QkPR2J-nr1ut40m4n-xb65dxjeEBmHyxqRvMy3Fn0aKHasXDj7LsmUA=w192-rw",
+            "name": "9XWQaMvMKX334v05LIwnX7NoIGRUtEtPLemxqY5atx9Y1pe-yw_QkPR2J-nr1ut40m4n-xb65dxjeEBmHyxqRvMy3Fn0aKHasXDj7LsmUA=w192-rw",
+            "restaurant_id": null
+          },
+          {
+            "image": "https://lh3.googleusercontent.com/kScpmvCaPt3AcFt3zLgeL1-zut-fnejkhRwOJMlcHXDTa_jGOsthLBcvZeRx6K_CTu61UQPV-1Hj_op45ZlUHFPFEVYda-LEc8YxWbAM=w192-rw",
+            "name": "kScpmvCaPt3AcFt3zLgeL1-zut-fnejkhRwOJMlcHXDTa_jGOsthLBcvZeRx6K_CTu61UQPV-1Hj_op45ZlUHFPFEVYda-LEc8YxWbAM=w192-rw",
+            "restaurant_id": null
+          },
+          {
+            "image": "https://lh3.googleusercontent.com/v43-QRt42sAPf9pf6W8lTF-WTKt-_aasMcGImfEdtpOJw-a06hT54V1uXIbo5nBrKgC960EHkZvGeMDSt6zytF6JEhERBxofyUMG-1oq=w192-rw",
+            "name": "v43-QRt42sAPf9pf6W8lTF-WTKt-_aasMcGImfEdtpOJw-a06hT54V1uXIbo5nBrKgC960EHkZvGeMDSt6zytF6JEhERBxofyUMG-1oq=w192-rw",
+            "restaurant_id": null
+          },
+          {
+            "image": "https://lh3.googleusercontent.com/BdLOwstsBeovnm9Dl3fOfaH89S2INBl1o8wfsD1zsa2vV9r-o9RaogVTmYcZSNr6EmkCQ2K83W3FHOpt4-W682_XK0YMBY6rGmA8nbVc=w192-rw",
+            "name": "BdLOwstsBeovnm9Dl3fOfaH89S2INBl1o8wfsD1zsa2vV9r-o9RaogVTmYcZSNr6EmkCQ2K83W3FHOpt4-W682_XK0YMBY6rGmA8nbVc=w192-rw",
+            "restaurant_id": null
+          },
+          {
+            "image": "https://lh3.googleusercontent.com/9XWQaMvMKX334v05LIwnX7NoIGRUtEtPLemxqY5atx9Y1pe-yw_QkPR2J-nr1ut40m4n-xb65dxjeEBmHyxqRvMy3Fn0aKHasXDj7LsmUA=w192-rw",
+            "name": "9XWQaMvMKX334v05LIwnX7NoIGRUtEtPLemxqY5atx9Y1pe-yw_QkPR2J-nr1ut40m4n-xb65dxjeEBmHyxqRvMy3Fn0aKHasXDj7LsmUA=w192-rw",
+            "restaurant_id": null
           }
+        ]
+      },
+      "price_range": "Cost for two: ₹400",
+      "rating": null,
+      "description": "",
+      "address": "D.No: 1-238/1/B No: 10 & 11, Vaishnavi Yadav Complex, Mail Road, Opp: Miyapur Wine Mart, Miyapur, Miyapur, Hyderabad",
+      "category": [
+        {
+          "category_name": "Recommended",
+          "items": [
+            {
+              "name": "Spinach Corn Cheese Omelette [3 Eggs]",
+              "price": 149,
+              "food_type": "veg",
+              "image": null,
+              "description": "Served with grilled tomato and potato wedges."
+            }
+          ]
         },
         {
-          "restaurant": {
-            "name": "Chaayos Chai+Snacks=Relax",
-            "location": "Jia Sarai, New Delhi",
-            "cuisines": [
-              "Tea",
-              "Sandwich",
-              "Fast Food",
-              "Street Food",
-              "Coffee",
-              "Tea",
-              "Sandwich",
-              "Fast Food",
-              "Street Food",
-              "Coffee"
-            ],
-            "save_percentage": null,
-            "phone": null,
-            "cover_img": "https://lh3.googleusercontent.com/W5EXSU87yiu5jrMvKR2F9M8ICvmsPrwa4z9ushYglrtg78WhEZpY5MNGyGgYSv3-pzEpBjBI_EDzQ2bRTcGlZeSVKSWJhzv5eAczJ5s=w250-rw",
-            "logo_img": "https://lh3.googleusercontent.com/NsMmDHq1-cf_7tqjuz5TnOQyhIsEiqbdc-ULS-YINGR5GAM0BVA7PsX0gVvtkjN81Nd7CqyP8U5MO6tjym-FsdbYV-VZLZK0cvCegGuxwA=w256-rw",
-            "images": {
-              "images": [
-
-              ]
+          "category_name": "Rice Bowl",
+          "items": [
+            {
+              "name": "Veg Cheese Dumpling Rice Bowl",
+              "price": 249,
+              "food_type": "veg",
+              "image": null,
+              "description": "Cheesy veg balls served with flavored rice and makhani sauce."
             },
-            "price_range": "Cost for two: ₹350",
-            "rating": 3.8,
-            "description": "Chaayos is an Indian F&B-QSR outlet that offers a unique combination of chai and snacks. It is known for its wide variety of chai flavors, ranging from classic masala chai to innovative fusion flavors. The snacks menu includes a variety of Indian snacks like samosas, kachoris, and sandwiches. The outlet also offers a range of quick bites like wraps, rolls, and burgers. The ambience is cozy and inviting, making it the perfect spot to relax and enjoy a cup of chai. The staff is friendly and attentive, ensuring that customers have a pleasant experience.",
-            "address": "Zanskar Hostel, Nearn Institute Of Technology Delhi, Jia Sarai, New Delhi"
-          }
+            {
+              "name": "Chicken Dumpling Rice Bowl",
+              "price": 229,
+              "food_type": "veg",
+              "image": null,
+              "description": "Juicy cheesy chicken dumplings served with flavored rice and makhani s"
+            },
+            {
+              "name": "Chicken Steak Rice Bowl",
+              "price": 249,
+              "food_type": "veg",
+              "image": null,
+              "description": "Tawa tossed chicken seekh kabab served with herbed rice and curry sauc"
+            },
+            {
+              "name": "Chicken Leg Rice Bowl",
+              "price": 249,
+              "food_type": "veg",
+              "image": null,
+              "description": "Crumb fried chicken served with flavored rice and makhani sauce."
+            },
+            {
+              "name": "Chicken Tikka Masala Rice Bowl",
+              "price": 299,
+              "food_type": "veg",
+              "image": null,
+              "description": "Chunks of chicken marinated in ground spices yoghurt and served with m"
+            }
+          ]
         },
         {
-          "restaurant": {
-            "name": "Nazeer Foods",
-            "location": "Connaught Place (Cp), New Delhi",
-            "cuisines": [
-              "North Indian",
-              "Mughlai",
-              "Biryani",
-              "Rolls",
-              "Burger",
-              "North Indian",
-              "Mughlai",
-              "Biryani",
-              "Rolls",
-              "Burger"
-            ],
-            "save_percentage": null,
-            "phone": null,
-            "cover_img": "https://lh3.googleusercontent.com/nowdYDIWzJjlSaxlXwJvg6hYV0iTY--K1eKE1qzN7uwNjDyCAqCmwulLYtTrumHJGAlqltKL2qcPIeHQJLW5DSm9EeVFrbgVFIs11C8=w250-rw",
-            "logo_img": "https://lh3.googleusercontent.com/jjuckklXs4iivhmSz7HTJ5knJ4ECOPEQOPVs59SAeR0F2WgQl4x8-H7Y__mClKsMVw_pxKGk5vaGx5eydbwfiTWigDP8qB4_9Ru1LRdr=w256-rw",
-            "images": {
-              "images": [
-                {
-                  "image": "https://lh3.googleusercontent.com/mU7sqKQCttJlue5ul_VXaWIDZwnUUkvfQepehWxw3W5yTvi9K_dImmm2VNosTb9ulca2oLCzkieJa4Vrafq1AS4kFy8=w192-rw",
-                  "name": "mU7sqKQCttJlue5ul_VXaWIDZwnUUkvfQepehWxw3W5yTvi9K_dImmm2VNosTb9ulca2oLCzkieJa4Vrafq1AS4kFy8=w192-rw",
-                  "restaurant_id": null
-                },
-                {
-                  "image": "https://lh3.googleusercontent.com/JgUPo2ze-pUfJS2sivqjfOXfnwBWnnYDJPEf-oVAHTXpgBgi6gZELxs2yOZo7-cWPMsDjTULWF8Q9-txhEJW-Iz2VMs=w192-rw",
-                  "name": "JgUPo2ze-pUfJS2sivqjfOXfnwBWnnYDJPEf-oVAHTXpgBgi6gZELxs2yOZo7-cWPMsDjTULWF8Q9-txhEJW-Iz2VMs=w192-rw",
-                  "restaurant_id": null
-                },
-                {
-                  "image": "https://lh3.googleusercontent.com/DXmU7ocLR3I4UKOGOgy-Ouihip8YbsOinmXjhH5El66RQzSRIiDK_0aIhzIVdrccIHxe_DfV9Gcrmf0tN1aUpAE2sDmd1Gd0iEKOxmw=w192-rw",
-                  "name": "DXmU7ocLR3I4UKOGOgy-Ouihip8YbsOinmXjhH5El66RQzSRIiDK_0aIhzIVdrccIHxe_DfV9Gcrmf0tN1aUpAE2sDmd1Gd0iEKOxmw=w192-rw",
-                  "restaurant_id": null
-                },
-                {
-                  "image": "https://lh3.googleusercontent.com/ee-cL7h-Y1uWeLbyiJ2-YsAP8HeGx3r_d91_NvNdrBt2ujJ8kVqLTE7cT114H46HCRImvJXQZFlJOIJbuDTIqlhTxWHWInG3-gZ1sdrjBQ=w192-rw",
-                  "name": "ee-cL7h-Y1uWeLbyiJ2-YsAP8HeGx3r_d91_NvNdrBt2ujJ8kVqLTE7cT114H46HCRImvJXQZFlJOIJbuDTIqlhTxWHWInG3-gZ1sdrjBQ=w192-rw",
-                  "restaurant_id": null
-                },
-                {
-                  "image": "https://lh3.googleusercontent.com/kSEbl6ghVoL9AfP5WE9n6rBsrhxp8UchAZp7M4Yicxlbll6Hwj_AKySO-88fAPPavd83GKR478GmkD2XY0gbS4Pot7Fz111lIAoVzQoI=w192-rw",
-                  "name": "kSEbl6ghVoL9AfP5WE9n6rBsrhxp8UchAZp7M4Yicxlbll6Hwj_AKySO-88fAPPavd83GKR478GmkD2XY0gbS4Pot7Fz111lIAoVzQoI=w192-rw",
-                  "restaurant_id": null
-                },
-                {
-                  "image": "https://lh3.googleusercontent.com/LqmKSLArw0z8NHU2qPpO76hrhD1Wq6YyBPklsv1NXywn4X8j_ITFwbGa1W89pSul9gHPt3-pidrxujUh5guO_A2t4HS7PBVRMEyczSwvUw=w192-rw",
-                  "name": "LqmKSLArw0z8NHU2qPpO76hrhD1Wq6YyBPklsv1NXywn4X8j_ITFwbGa1W89pSul9gHPt3-pidrxujUh5guO_A2t4HS7PBVRMEyczSwvUw=w192-rw",
-                  "restaurant_id": null
-                },
-                {
-                  "image": "https://lh3.googleusercontent.com/UV9ZuKGULpmwh9Hlxv1qRxM17TCKOLPzO5bWFfW_SOXLxBxQyfWvUjkZKFPtxEPHqEWGEaEHLClVBE1C5NfYbeq_L0sWklC72atKoyEu=w192-rw",
-                  "name": "UV9ZuKGULpmwh9Hlxv1qRxM17TCKOLPzO5bWFfW_SOXLxBxQyfWvUjkZKFPtxEPHqEWGEaEHLClVBE1C5NfYbeq_L0sWklC72atKoyEu=w192-rw",
-                  "restaurant_id": null
-                },
-                {
-                  "image": "https://lh3.googleusercontent.com/nNb2CtCNqlVubeWzSsLVpS_Ha8ubnQELQEHC4YIf6x-0PAI_9C5-axoNa3EpUdLTxuOQLoEIKj5i23NJiD_ENnWgLuLpk5G-dnpeEyM9=w192-rw",
-                  "name": "nNb2CtCNqlVubeWzSsLVpS_Ha8ubnQELQEHC4YIf6x-0PAI_9C5-axoNa3EpUdLTxuOQLoEIKj5i23NJiD_ENnWgLuLpk5G-dnpeEyM9=w192-rw",
-                  "restaurant_id": null
-                },
-                {
-                  "image": "https://lh3.googleusercontent.com/mU7sqKQCttJlue5ul_VXaWIDZwnUUkvfQepehWxw3W5yTvi9K_dImmm2VNosTb9ulca2oLCzkieJa4Vrafq1AS4kFy8=w192-rw",
-                  "name": "mU7sqKQCttJlue5ul_VXaWIDZwnUUkvfQepehWxw3W5yTvi9K_dImmm2VNosTb9ulca2oLCzkieJa4Vrafq1AS4kFy8=w192-rw",
-                  "restaurant_id": null
-                },
-                {
-                  "image": "https://lh3.googleusercontent.com/JgUPo2ze-pUfJS2sivqjfOXfnwBWnnYDJPEf-oVAHTXpgBgi6gZELxs2yOZo7-cWPMsDjTULWF8Q9-txhEJW-Iz2VMs=w192-rw",
-                  "name": "JgUPo2ze-pUfJS2sivqjfOXfnwBWnnYDJPEf-oVAHTXpgBgi6gZELxs2yOZo7-cWPMsDjTULWF8Q9-txhEJW-Iz2VMs=w192-rw",
-                  "restaurant_id": null
-                },
-                {
-                  "image": "https://lh3.googleusercontent.com/DXmU7ocLR3I4UKOGOgy-Ouihip8YbsOinmXjhH5El66RQzSRIiDK_0aIhzIVdrccIHxe_DfV9Gcrmf0tN1aUpAE2sDmd1Gd0iEKOxmw=w192-rw",
-                  "name": "DXmU7ocLR3I4UKOGOgy-Ouihip8YbsOinmXjhH5El66RQzSRIiDK_0aIhzIVdrccIHxe_DfV9Gcrmf0tN1aUpAE2sDmd1Gd0iEKOxmw=w192-rw",
-                  "restaurant_id": null
-                },
-                {
-                  "image": "https://lh3.googleusercontent.com/ee-cL7h-Y1uWeLbyiJ2-YsAP8HeGx3r_d91_NvNdrBt2ujJ8kVqLTE7cT114H46HCRImvJXQZFlJOIJbuDTIqlhTxWHWInG3-gZ1sdrjBQ=w192-rw",
-                  "name": "ee-cL7h-Y1uWeLbyiJ2-YsAP8HeGx3r_d91_NvNdrBt2ujJ8kVqLTE7cT114H46HCRImvJXQZFlJOIJbuDTIqlhTxWHWInG3-gZ1sdrjBQ=w192-rw",
-                  "restaurant_id": null
-                }
-              ]
+          "category_name": "Platters",
+          "items": [
+            {
+              "name": "Broccoli And Mushroom Rice Platter",
+              "price": 249,
+              "food_type": "veg",
+              "image": null,
+              "description": "Broccoli and mushroom in rich sauce served with grilled vegetables and"
             },
-            "price_range": "Cost for two: ₹500",
-            "rating": 4.0,
-            "description": "Nazeer Foods is a F&B-Casual Dining Indian outlet that offers a wide variety of delicious and authentic Indian cuisine. The restaurant has a warm and inviting atmosphere, with friendly and attentive staff. The menu features a variety of dishes, from traditional curries to tandoori specialties. The food is freshly prepared and cooked to perfection. The restaurant also offers a variety of drinks, including traditional Indian beverages. Nazeer Foods is the perfect place to enjoy a delicious meal with friends and family.",
-            "address": "M 42, Next To Ministry Of Beer Outer Circle, Connaught Place (CP), New Delhi"
-          }
+            {
+              "name": "Pepper Mushroom Sauce Platter",
+              "price": 269,
+              "food_type": "veg",
+              "image": null,
+              "description": "Mushroom in spicy pepper sauce served with buttered parsley rice."
+            },
+            {
+              "name": "Pepper Chicken With Herbed Rice",
+              "price": 299,
+              "food_type": "veg",
+              "image": null,
+              "description": "Peppered chicken and mushroom in brown sauce."
+            },
+            {
+              "name": "Chicken And Mushroom Rice Platter",
+              "price": 299,
+              "food_type": "veg",
+              "image": null,
+              "description": "Creamy chicken and mushroom served with diced potatoes and grilled veg"
+            }
+          ]
         },
         {
-          "restaurant": {
-            "name": "BTW",
-            "location": "Barakhamba Road, New Delhi",
-            "cuisines": [
-              "North Indian",
-              "North Indian"
-            ],
-            "save_percentage": null,
-            "phone": null,
-            "cover_img": "https://lh3.googleusercontent.com/6lMpRQODGubyNNmf-unHAXZBl7L1J4Chl-AQHH0N08sKZFXh5NHHb-k0wG5LXN6fI230W_c4tlJl6oYJnTMjpOmqFYFgU0iFWdggqwAU=w250-rw",
-            "logo_img": "https://lh3.googleusercontent.com/k5eyS0MSk8b3q9GsajAFty5vQDvHJjbndTgGr25ysEWweEMyEJ-2Y6zC68BD2PPDFJvm2TH-9v4CDAtPcXmom3y9Mje5leLAfyvH28FBrw=w256-rw",
-            "images": {
-              "images": [
-                {
-                  "image": "https://lh3.googleusercontent.com/IyWHGIUbbdzfN7_LcPK92-G5Yb7UhsvCTX-X3NxvDPnC7kUZpxHJHpVxg8kFAMH8IxeVCxvtLO6d5zdxrvzwOoKwPECpxxHk2_bG1Sc=w192-rw",
-                  "name": "IyWHGIUbbdzfN7_LcPK92-G5Yb7UhsvCTX-X3NxvDPnC7kUZpxHJHpVxg8kFAMH8IxeVCxvtLO6d5zdxrvzwOoKwPECpxxHk2_bG1Sc=w192-rw",
-                  "restaurant_id": null
-                },
-                {
-                  "image": "https://lh3.googleusercontent.com/IyWHGIUbbdzfN7_LcPK92-G5Yb7UhsvCTX-X3NxvDPnC7kUZpxHJHpVxg8kFAMH8IxeVCxvtLO6d5zdxrvzwOoKwPECpxxHk2_bG1Sc=w192-rw",
-                  "name": "IyWHGIUbbdzfN7_LcPK92-G5Yb7UhsvCTX-X3NxvDPnC7kUZpxHJHpVxg8kFAMH8IxeVCxvtLO6d5zdxrvzwOoKwPECpxxHk2_bG1Sc=w192-rw",
-                  "restaurant_id": null
-                }
-              ]
+          "category_name": "Sizzlers",
+          "items": [
+            {
+              "name": "Thai Green Curry Sizzler",
+              "price": 269,
+              "food_type": "veg",
+              "image": null,
+              "description": "Seasoned mixed vegetables served with jasmine rice in a light coconut"
             },
-            "price_range": "Cost for two: ₹250",
-            "rating": 4.7,
-            "description": "BTW is an online brand that offers a wide range of products for the modern lifestyle. From apparel to accessories, BTW has something for everyone. Their products are designed to be stylish, comfortable, and affordable. They use high-quality materials and craftsmanship to ensure that their products are of the highest quality. BTW also offers free shipping and returns on all orders, making it easy to shop with them. With their commitment to customer satisfaction, BTW is the perfect choice for anyone looking for stylish and affordable products.",
-            "address": "Pocket-6A,Deendayal Upadhyay Marg, Barakhamba Road, New Delhi"
-          }
+            {
+              "name": "Poulet Champignon Sizzler",
+              "price": 349,
+              "food_type": "veg",
+              "image": null,
+              "description": "Marinated tended crumb fried chicken breast crowned with brown mushroo"
+            }
+          ]
         },
         {
-          "restaurant": {
-            "name": "Theobroma",
-            "location": "Greater Kailash 2, New Delhi",
-            "cuisines": [
-              "Bakery",
-              "Desserts",
-              "Pastry",
-              "Cake",
-              "Bakery",
-              "Desserts",
-              "Pastry",
-              "Cake"
-            ],
-            "save_percentage": null,
-            "phone": null,
-            "cover_img": "https://lh3.googleusercontent.com/78ZjILz4NDH19Nb1C_KaWYSmAc5ePvCmcWVFEvCiFNC7TWX8KFAz9aO7cT_ZxHx-fIrRRxPVPMR2TJC93KoT16OBQRP2ZvC7StEcGcUaXw=w250-rw",
-            "logo_img": "https://lh3.googleusercontent.com/zLhbdINIIjl89bAuf0-9ZUA1HB5ik6GOLdMgFzmAFX7hM_W7i2WJdbdIYGgc62_g57Og1TgP-wFRb275hUPZjRB2dJvIPw0bRgn7AlBX=w256-rw",
-            "images": {
-              "images": [
-                {
-                  "image": "https://lh3.googleusercontent.com/ZPjBFHgbICq8QZikTRer_3D4SEcFcUOyIfgRIAO6JzgsocvZ1Lk9Vu_Q8vGTZzV5ozO3MbJfqI3JdseDt-1nEuS9MfpswB0NkcO0p_OdWA=w192-rw",
-                  "name": "ZPjBFHgbICq8QZikTRer_3D4SEcFcUOyIfgRIAO6JzgsocvZ1Lk9Vu_Q8vGTZzV5ozO3MbJfqI3JdseDt-1nEuS9MfpswB0NkcO0p_OdWA=w192-rw",
-                  "restaurant_id": null
-                },
-                {
-                  "image": "https://lh3.googleusercontent.com/6ZBfF4LtlHhMS28rbV2_fBcFuSDLHT8gEnzv22nhyWOUgdPxSASnxUINXlHlIhQnA3_qEWmrKtaE0b57cgbe-XD5pJX6psvTqKQwI1I=w192-rw",
-                  "name": "6ZBfF4LtlHhMS28rbV2_fBcFuSDLHT8gEnzv22nhyWOUgdPxSASnxUINXlHlIhQnA3_qEWmrKtaE0b57cgbe-XD5pJX6psvTqKQwI1I=w192-rw",
-                  "restaurant_id": null
-                },
-                {
-                  "image": "https://lh3.googleusercontent.com/78ZjILz4NDH19Nb1C_KaWYSmAc5ePvCmcWVFEvCiFNC7TWX8KFAz9aO7cT_ZxHx-fIrRRxPVPMR2TJC93KoT16OBQRP2ZvC7StEcGcUaXw=w192-rw",
-                  "name": "78ZjILz4NDH19Nb1C_KaWYSmAc5ePvCmcWVFEvCiFNC7TWX8KFAz9aO7cT_ZxHx-fIrRRxPVPMR2TJC93KoT16OBQRP2ZvC7StEcGcUaXw=w192-rw",
-                  "restaurant_id": null
-                },
-                {
-                  "image": "https://lh3.googleusercontent.com/ZPjBFHgbICq8QZikTRer_3D4SEcFcUOyIfgRIAO6JzgsocvZ1Lk9Vu_Q8vGTZzV5ozO3MbJfqI3JdseDt-1nEuS9MfpswB0NkcO0p_OdWA=w192-rw",
-                  "name": "ZPjBFHgbICq8QZikTRer_3D4SEcFcUOyIfgRIAO6JzgsocvZ1Lk9Vu_Q8vGTZzV5ozO3MbJfqI3JdseDt-1nEuS9MfpswB0NkcO0p_OdWA=w192-rw",
-                  "restaurant_id": null
-                },
-                {
-                  "image": "https://lh3.googleusercontent.com/6ZBfF4LtlHhMS28rbV2_fBcFuSDLHT8gEnzv22nhyWOUgdPxSASnxUINXlHlIhQnA3_qEWmrKtaE0b57cgbe-XD5pJX6psvTqKQwI1I=w192-rw",
-                  "name": "6ZBfF4LtlHhMS28rbV2_fBcFuSDLHT8gEnzv22nhyWOUgdPxSASnxUINXlHlIhQnA3_qEWmrKtaE0b57cgbe-XD5pJX6psvTqKQwI1I=w192-rw",
-                  "restaurant_id": null
-                },
-                {
-                  "image": "https://lh3.googleusercontent.com/78ZjILz4NDH19Nb1C_KaWYSmAc5ePvCmcWVFEvCiFNC7TWX8KFAz9aO7cT_ZxHx-fIrRRxPVPMR2TJC93KoT16OBQRP2ZvC7StEcGcUaXw=w192-rw",
-                  "name": "78ZjILz4NDH19Nb1C_KaWYSmAc5ePvCmcWVFEvCiFNC7TWX8KFAz9aO7cT_ZxHx-fIrRRxPVPMR2TJC93KoT16OBQRP2ZvC7StEcGcUaXw=w192-rw",
-                  "restaurant_id": null
-                },
-                {
-                  "image": "https://lh3.googleusercontent.com/HcLvebFpYNGyrDlG5L-u1n308zNi9okgRGprPKHmRGebAeeflUTc0AHm8he4FsSw3hWurDwc4bpS9dT_NY0wvQNEQiQzvEwzpnZwvbFW=w192-rw",
-                  "name": "HcLvebFpYNGyrDlG5L-u1n308zNi9okgRGprPKHmRGebAeeflUTc0AHm8he4FsSw3hWurDwc4bpS9dT_NY0wvQNEQiQzvEwzpnZwvbFW=w192-rw",
-                  "restaurant_id": null
-                },
-                {
-                  "image": "https://lh3.googleusercontent.com/HcLvebFpYNGyrDlG5L-u1n308zNi9okgRGprPKHmRGebAeeflUTc0AHm8he4FsSw3hWurDwc4bpS9dT_NY0wvQNEQiQzvEwzpnZwvbFW=w192-rw",
-                  "name": "HcLvebFpYNGyrDlG5L-u1n308zNi9okgRGprPKHmRGebAeeflUTc0AHm8he4FsSw3hWurDwc4bpS9dT_NY0wvQNEQiQzvEwzpnZwvbFW=w192-rw",
-                  "restaurant_id": null
-                }
-              ]
+          "category_name": "Salads",
+          "items": [
+            {
+              "name": "Veg Caesar Salad",
+              "price": 249,
+              "food_type": "veg",
+              "image": null,
+              "description": "Crisp lettuce enrolled in caesar dressing, garlic croutons Parmesan dr"
             },
-            "price_range": "Cost for two: ₹300",
-            "rating": 3.8,
-            "description": "Theobroma is one of the most popular bakeries, patisserie, and chocolaterie chains in the country. An array of desserts and confectionary items along with a variety of quick-grabs are offered by this place. The menu also serves some of the best fast food items along with delicious beverages. Theobroma has set a benchmark for delivering high-quality food at affordable prices. This bakery has its outlets spread across the country. This outlet is located in Nebula Building in Andheri Lokhandwala, Mumbai.",
-            "address": "M-22, Ground Floor, Greater Kailash, Greater Kailash 2, New Delhi"
-          }
+            {
+              "name": "Veg Hawaiian Salad",
+              "price": 249,
+              "food_type": "veg",
+              "image": null,
+              "description": "Spicy grilled pineapple and paneer folded with crispy iceberg lettuce,"
+            },
+            {
+              "name": "Veg Fried Noodles Salad",
+              "price": 249,
+              "food_type": "veg",
+              "image": null,
+              "description": "Crispy fried noodles tossed with oriental smoky vegetables."
+            },
+            {
+              "name": "Chicken Caesar Salad",
+              "price": 299,
+              "food_type": "veg",
+              "image": null,
+              "description": "Topped with seasoned chicken breast and smoked chicken dice."
+            },
+            {
+              "name": "Chicken Hawaiian Salad",
+              "price": 299,
+              "food_type": "veg",
+              "image": null,
+              "description": "Spicy grilled pineapple and chicken folded with crispy iceberg lettuce"
+            },
+            {
+              "name": "Chicken Fried Noodles Salad",
+              "price": 299,
+              "food_type": "veg",
+              "image": null,
+              "description": "Crispy fried noodles tossed with oriental smoky chicken."
+            }
+          ]
         },
         {
-          "restaurant": {
-            "name": "Keventers - Milkshakes & Desserts",
-            "location": "Select Citywalk, New Delhi",
-            "cuisines": [
-              "Ice Cream",
-              "Shakes",
-              "Desserts",
-              "Ice Cream",
-              "Shakes",
-              "Desserts"
-            ],
-            "save_percentage": null,
-            "phone": null,
-            "cover_img": "https://lh3.googleusercontent.com/hSt0Hw5xhKyiEHmNY4e7Kgx0vWLBUtGyTyMBT1L_63SXpyXHJ6tXniEqZGstNkaMTbNr6qPSAiBmNWAvn4bNMNuXXFjZlINRTYoRq-2o=w250-rw",
-            "logo_img": "https://lh3.googleusercontent.com/-9u7HROGCkzCwsbOJ8sapQ-NKvl8vl-pj_pL5ACY34Q1qKRY1Wom0ZD9EdHfIAZa6W497pvWXy2kauUv75XEvwFKYNQeeTwy-AsXA6oE=w256-rw",
-            "images": {
-              "images": [
-                {
-                  "image": "https://cdn.magicpin.com/videos/fce8f72c-40ea-4a59-a921-da511a5a17f0_7dcfdf69-67ec-46ba-afb1-40120a67d623/thumbnail.jpg",
-                  "name": "thumbnail.jpg",
-                  "restaurant_id": null
-                },
-                {
-                  "image": "https://cdn.magicpin.com/videos/fce8f72c-40ea-4a59-a921-da511a5a17f0_7dcfdf69-67ec-46ba-afb1-40120a67d623/thumbnail.jpg",
-                  "name": "thumbnail.jpg",
-                  "restaurant_id": null
-                }
-              ]
-            },
-            "price_range": "Cost for two: ₹250",
-            "rating": 4.0,
-            "description": "Keventers is a popular chain of cafe joints specializing in offering deliciously flavored milkshakes and other beverages. The place offers an economical menu and an exclusive range of milkshakes to choose from. Every shake they serve is freshly prepared using the finest milk products and authentic flavors. Keventers has a number of outlets located spread in the city. This outlet is located in Aggarwal Millenium Tower in Netaji Subhash Place, Delhi.",
-            "address": "My Square Hari Singh Road, Select Citywalk, New Delhi"
-          }
+          "category_name": "Chinese",
+          "items": [
+            {
+              "name": "Crispy Potato With Yellow Cheese And Mexican Salsa",
+              "price": 149,
+              "food_type": "veg",
+              "image": null,
+              "description": ""
+            }
+          ]
         },
         {
-          "restaurant": {
-            "name": "Wat-a-Burger!",
-            "location": "Jmd Kohinoor Mall, New Delhi",
-            "cuisines": [
-              "Burger",
-              "Burger"
-            ],
-            "save_percentage": null,
-            "phone": null,
-            "cover_img": "https://lh3.googleusercontent.com/d35t2tnZElePvjwhQ9-yqC8mjSAbG2ZBi7NARsQM0_InOYR4S2kw1o_cnvf1XYXv07kgEz0Yu6hcdtHB-KKCzktn5y4=w250-rw",
-            "logo_img": "https://lh3.googleusercontent.com/PBfqISAOTMNu7g3gcR1hswcRyKzAFyLbrDT36ggB_Y09rfSn1xyLgM3i4SQJj8s2yH0Vbkj7JOfgZkvqeYmW8Gq8bm8=w256-rw",
-            "images": {
-              "images": [
-                {
-                  "image": "https://lh3.googleusercontent.com/vqZwxk0vCOyQ7KdZv-FmgA6eVQXvjAIe5Kls5QaAmHr_LVln-jzu5bCKgWBG7FDFMddfJwCQ5ucGte-Fl6qrvQUML8kPkZyJTaeoeS3Y=w192-rw",
-                  "name": "vqZwxk0vCOyQ7KdZv-FmgA6eVQXvjAIe5Kls5QaAmHr_LVln-jzu5bCKgWBG7FDFMddfJwCQ5ucGte-Fl6qrvQUML8kPkZyJTaeoeS3Y=w192-rw",
-                  "restaurant_id": null
-                },
-                {
-                  "image": "https://lh3.googleusercontent.com/vqZwxk0vCOyQ7KdZv-FmgA6eVQXvjAIe5Kls5QaAmHr_LVln-jzu5bCKgWBG7FDFMddfJwCQ5ucGte-Fl6qrvQUML8kPkZyJTaeoeS3Y=w192-rw",
-                  "name": "vqZwxk0vCOyQ7KdZv-FmgA6eVQXvjAIe5Kls5QaAmHr_LVln-jzu5bCKgWBG7FDFMddfJwCQ5ucGte-Fl6qrvQUML8kPkZyJTaeoeS3Y=w192-rw",
-                  "restaurant_id": null
-                }
-              ]
+          "category_name": "Pizza And Pasta",
+          "items": [
+            {
+              "name": "Veg Al Arrabbiata Pasta",
+              "price": 249,
+              "food_type": "veg",
+              "image": null,
+              "description": "Italian spicy tomato sauce made with tomatoes, garlic, red chilli pepp"
             },
-            "price_range": "Cost for two: ₹300",
-            "rating": 4.0,
-            "description": "Wat-a-Burger! is a fast food restaurant specializing in burgers and other classic American cuisine. With its fun and quirky name, Wat-a-Burger! offers a unique dining experience for customers looking for delicious and satisfying food. Their menu features a variety of juicy burgers, along with sides such as French fries, onion rings, and milkshakes. Wat-a-Burger! uses only high-quality ingredients, including fresh buns, beef patties, and toppings, to create a delicious and memorable burger experience. With its casual and friendly atmosphere, Wat-a-Burger! is a popular spot for families, friends, and solo diners alike. Whether you're in the mood for a quick bite or a sit-down meal, Wat-a-Burger! has something for everyone.",
-            "address": "O-8, Gf, Adjacent Patanjali Store, JMD Kohinoor Mall, New Delhi"
-          }
+            {
+              "name": "Mushroom Alfredo Pasta",
+              "price": 249,
+              "food_type": "veg",
+              "image": null,
+              "description": "Smooth and rich creamy cheese sauce. Served with butter garlic crostin"
+            },
+            {
+              "name": "Pesto Pasta",
+              "price": 269,
+              "food_type": "veg",
+              "image": null,
+              "description": "Basil pesto sauce, tossed in olive oil and your favorite pasta. Served"
+            },
+            {
+              "name": "Veg Mexican Hot N Spice Pasta",
+              "price": 269,
+              "food_type": "veg",
+              "image": null,
+              "description": "Paprika salsa folded with spicy tomato sauce, bell peppers, olives, Am"
+            },
+            {
+              "name": "Veg Lasagna",
+              "price": 299,
+              "food_type": "veg",
+              "image": null,
+              "description": "Lasagna filled with ratatouille, tossed spinach, creamy button mushroo"
+            },
+            {
+              "name": "Chicken Alfredo Pasta",
+              "price": 299,
+              "food_type": "non-veg",
+              "image": null,
+              "description": "Smooth and rich creamy cheese sauce. Served with butter garlic crostin"
+            },
+            {
+              "name": "Grilled Chicken Mexican Hot N Spice Pasta",
+              "price": 299,
+              "food_type": "veg",
+              "image": null,
+              "description": "Paprika salsa folded with spicy tomato sauce, bell peppers, olives, Am"
+            },
+            {
+              "name": "Chicken Lasagna",
+              "price": 349,
+              "food_type": "veg",
+              "image": null,
+              "description": "Tri layered lasagna filled with chicken bolognese, basil pesto and roa"
+            }
+          ]
         },
         {
-          "restaurant": {
-            "name": "Dunkin'",
-            "location": "Gardens Galleria Mall, Noida",
-            "cuisines": [
-              "Desserts",
-              "Burger",
-              "Fast Food",
-              "Cappuccino",
-              "Desserts",
-              "Burger",
-              "Fast Food",
-              "Cappuccino"
-            ],
-            "save_percentage": null,
-            "phone": null,
-            "cover_img": "https://lh3.googleusercontent.com/tCV4xaIyExmsYGLhtQGO8V4-c0eKNOHJ2MuICZZi5TglDfs45E5DAtC-Nt993r9oW4gsORF7U5Wps4uwguH7vxBPCKiNcnBjCRms4sUiaw=w250-rw",
-            "logo_img": "https://lh3.googleusercontent.com/e1cb02Bcx_pGqYic9y12pIjDzLiGy29hkT69MGWkermXRfakVgHKOBHEvMHUx2VTmD0n9uuAaBuXJO3uH4np9VbpERuVQzgd-eBnoQF5sA=w256-rw",
-            "images": {
-              "images": [
-
-              ]
+          "category_name": "Burgers And Sandwiches",
+          "items": [
+            {
+              "name": "Grilled Sundried Tomato Basil Cheese Sandwich",
+              "price": 99,
+              "food_type": "veg",
+              "image": null,
+              "description": "Melted Cheddar cheese dusted with basil and tomato in brown bread."
             },
-            "price_range": "Cost for two: ₹250",
-            "rating": 4.0,
-            "description": "Dunkin' is a popular F&B-QSR Indian outlet that offers a wide variety of delicious food and beverages. It is known for its high-quality ingredients, freshness, and great taste. The menu includes a variety of snacks, sandwiches, burgers, wraps, and beverages. The outlet also offers a variety of combos and meal deals that are great value for money. The staff is friendly and helpful, and the service is fast and efficient. Dunkin' is a great place to grab a quick bite or a refreshing drink.",
-            "address": "Garden Galleria, Gardens Galleria Mall, Noida"
-          }
+            {
+              "name": "Rock Salt Olive Focaccia Sandwich",
+              "price": 149,
+              "food_type": "non-veg",
+              "image": null,
+              "description": "Italian olive bread with grated soft cheese tossed peppers, corn and p"
+            },
+            {
+              "name": "Gateway Deccan Sandwich",
+              "price": 149,
+              "food_type": "non-veg",
+              "image": null,
+              "description": "Mayo butter spread toast with spiced potatoes, cheese and hand picked"
+            },
+            {
+              "name": "TLC Sandwich",
+              "price": 99,
+              "food_type": "veg",
+              "image": null,
+              "description": "Tender loving care. Tomato, lettuce, cucumber and cheese."
+            },
+            {
+              "name": "Crispy Chicken Sub Roll Sandwich",
+              "price": 180,
+              "food_type": "non-veg",
+              "image": null,
+              "description": "Breaded crispy fried chicken with oozy mayo in panini sauce."
+            },
+            {
+              "name": "Tandoori Chicken Tikka Sandwich",
+              "price": 199,
+              "food_type": "veg",
+              "image": null,
+              "description": "Indian style spiced grilled chicken in kasoori methi, cheese and foot"
+            },
+            {
+              "name": "Country Bread Chicken Bacon And Parmesan Sandwich",
+              "price": 219,
+              "food_type": "veg",
+              "image": null,
+              "description": "Thick crust rye bread stuffed with Parmesan cheese sauce and smoked ch"
+            },
+            {
+              "name": "Chipotle Chicken Caesar Sandwich",
+              "price": 180,
+              "food_type": "veg",
+              "image": null,
+              "description": "Chicken caesar salad bound with traditional chipotle chilli sauce in s"
+            },
+            {
+              "name": "Schezwan Chicken Sandwich",
+              "price": 199,
+              "food_type": "veg",
+              "image": null,
+              "description": "Crispy chicken tossed with schezwan sauce bedded in iceberg lettuce on"
+            },
+            {
+              "name": "Chef Bakers Club Sandwich",
+              "price": 229,
+              "food_type": "non-veg",
+              "image": null,
+              "description": "Succulent juicy chicken, fried egg, layered in toasted bread with butt"
+            },
+            {
+              "name": "Veg And Cheese Burger",
+              "price": 99,
+              "food_type": "veg",
+              "image": null,
+              "description": "Oven fresh burger buns filled with vegetable patty, cucumber, tomato a"
+            },
+            {
+              "name": "Aloo Tikki Burger",
+              "price": 89,
+              "food_type": "non-veg",
+              "image": null,
+              "description": "Mumbai style spiced aloo tikki and cheese burger."
+            },
+            {
+              "name": "Chicken And Cheese Burger",
+              "price": 119,
+              "food_type": "non-veg",
+              "image": null,
+              "description": "Cheesy chicken burger, bedded on Iceberg and sliced tomatoes."
+            },
+            {
+              "name": "Barbecue Chicken Burger",
+              "price": 169,
+              "food_type": "veg",
+              "image": null,
+              "description": "Barbecued chicken patty in iceberg with onion rings jalapeno and tomat"
+            },
+            {
+              "name": "Peri Peri Crispy Chicken Burger",
+              "price": 180,
+              "food_type": "veg",
+              "image": null,
+              "description": "Tender spicy delight of chicken in a soft bun."
+            },
+            {
+              "name": "Supreme Chicken Burger With Wedges",
+              "price": 210,
+              "food_type": "veg",
+              "image": null,
+              "description": "Chicken patty, chicken salami, fried egg, cheese, tomato, iceberg, jal"
+            },
+            {
+              "name": "Tandoori Chicken Tikka Burger",
+              "price": 199,
+              "food_type": "non-veg",
+              "image": null,
+              "description": "Traditional smoky flavored chicken fillet in bb."
+            },
+            {
+              "name": "Chef Bakers Signature Burger With Fries",
+              "price": 220,
+              "food_type": "veg",
+              "image": null,
+              "description": "House made teriyaki marinate chicken steak served with fries."
+            },
+            {
+              "name": "Homemade Chicken Burger",
+              "price": 169,
+              "food_type": "veg",
+              "image": null,
+              "description": "Granny wayi chicken mince patty and cheese."
+            }
+          ]
         },
         {
-          "restaurant": {
-            "name": "Chai N More",
-            "location": "Sector 62, Noida",
-            "cuisines": [
-              "Tea",
-              "Tea"
-            ],
-            "save_percentage": null,
-            "phone": [
-              "+919891021405"
-            ],
-            "cover_img": "https://lh3.googleusercontent.com/VET3AWSs4hWYWiHH7gFLZEp7nSPmF0-zcKh040AMEkUgLz9qcgbWXOJ3n_QGeHzU3GlxICN8LCfv84HUzvZhAKAO-z52=w250-rw",
-            "logo_img": "https://lh3.googleusercontent.com/IelDafQDSQVT7ULn-YUWNHU_65sMOgz5JIeTgJ68t0wjo3IRoe4OcPIZtcamqNVhNVAQeaIG-EQL1wZ0yaL6qomMEmCN=w256-rw",
-            "images": {
-              "images": [
-
-              ]
+          "category_name": "Snacks",
+          "items": [
+            {
+              "name": "Natural Omelette [3 Eggs]",
+              "price": 99,
+              "food_type": "veg",
+              "image": null,
+              "description": "Served with grilled tomato and potato wedges."
             },
-            "price_range": "Cost for two: ₹500",
-            "rating": 3.9,
-            "description": "Chai N More is a F&B-Casual Dining outlet that offers a unique and delightful experience. It is a place where you can enjoy a variety of delicious food and drinks. The menu includes a wide range of Indian, Chinese and Continental dishes. The ambience is warm and inviting, with comfortable seating and a relaxed atmosphere. The staff is friendly and attentive, ensuring that your experience is enjoyable. Chai N More also offers a variety of beverages, including tea, coffee, juices and shakes. Whether you are looking for a quick snack or a full meal, Chai N More is the perfect place to satisfy your cravings.",
-            "address": "62 A Block Phase, 47/48 Opposite Nokia Siemens Building Sector, 2, Block A, Industrial Area, Sector 62, Noida"
-          }
+            {
+              "name": "Masala Omelette [3 Eggs]",
+              "price": 129,
+              "food_type": "veg",
+              "image": null,
+              "description": "Served with grilled tomato and potato wedges."
+            },
+            {
+              "name": "Mushroom Omelette [3 Eggs]",
+              "price": 129,
+              "food_type": "veg",
+              "image": null,
+              "description": "Served with grilled tomato and potato wedges."
+            },
+            {
+              "name": "Spinach Corn Cheese Omelette [3 Eggs]",
+              "price": 149,
+              "food_type": "veg",
+              "image": null,
+              "description": "Served with grilled tomato and potato wedges."
+            },
+            {
+              "name": "Double Cheese Omelette [3 Eggs]",
+              "price": 149,
+              "food_type": "veg",
+              "image": null,
+              "description": "Served with grilled tomato and potato wedges."
+            },
+            {
+              "name": "Smoked Chicken Omelette [3 Eggs]",
+              "price": 149,
+              "food_type": "veg",
+              "image": null,
+              "description": "Served with grilled tomato and potato wedges."
+            },
+            {
+              "name": "French Fries",
+              "price": 99,
+              "food_type": "veg",
+              "image": null,
+              "description": "Served with dips."
+            },
+            {
+              "name": "Crunchy Peri Peri Fries",
+              "price": 130,
+              "food_type": "non-veg",
+              "image": null,
+              "description": "Served with dips."
+            },
+            {
+              "name": "Hot Salsa Jalapeno Fries",
+              "price": 130,
+              "food_type": "non-veg",
+              "image": null,
+              "description": "Served with dips."
+            },
+            {
+              "name": "Homemade Onion Rings",
+              "price": 149,
+              "food_type": "veg",
+              "image": null,
+              "description": ""
+            },
+            {
+              "name": "Paneer Kurkure With Hot Sauce",
+              "price": 199,
+              "food_type": "veg",
+              "image": null,
+              "description": "Accompanied with dips."
+            },
+            {
+              "name": "Chilli Cheese Toast In French Bread",
+              "price": 199,
+              "food_type": "veg",
+              "image": null,
+              "description": "Accompanied with dips."
+            },
+            {
+              "name": "Garlic Herb Toast",
+              "price": 149,
+              "food_type": "veg",
+              "image": null,
+              "description": "Accompanied with dips."
+            },
+            {
+              "name": "Red Pepper Cheese Balls",
+              "price": 149,
+              "food_type": "veg",
+              "image": null,
+              "description": "Accompanied with dips."
+            },
+            {
+              "name": "Crispy Corn Nachos",
+              "price": 149,
+              "food_type": "veg",
+              "image": null,
+              "description": "Accompanied with dips."
+            },
+            {
+              "name": "Chicken Nuggets",
+              "price": 199,
+              "food_type": "veg",
+              "image": null,
+              "description": "Accompanied with dips."
+            }
+          ]
+        },
+        {
+          "category_name": "Rolls",
+          "items": [
+            {
+              "name": "Paneer Tikka Roll",
+              "price": 149,
+              "food_type": "veg",
+              "image": null,
+              "description": "Delicious paneer tikka with mint in paratha."
+            },
+            {
+              "name": "Garden Greens Roll",
+              "price": 99,
+              "food_type": "veg",
+              "image": null,
+              "description": "Mesclun garden greens with mint mayo sauce."
+            },
+            {
+              "name": "Grilled Chicken Roll With Cilantro Sauce",
+              "price": 149,
+              "food_type": "veg",
+              "image": null,
+              "description": "Paratha rolls with grilled chicken in tahini cilantro."
+            },
+            {
+              "name": "Chicken Tikka Roll",
+              "price": 149,
+              "food_type": "veg",
+              "image": null,
+              "description": "Boneless chicken tikka with mint mayo rolled."
+            }
+          ]
+        },
+        {
+          "category_name": "Waffles",
+          "items": [
+            {
+              "name": "Fig And Honey With Vanilla Cream Waffle",
+              "price": 199,
+              "food_type": "veg",
+              "image": null,
+              "description": "A crisp golden Belgian waffle topped with figs and honey. fresh cream"
+            },
+            {
+              "name": "Toffeed Banan Waffle",
+              "price": 199,
+              "food_type": "veg",
+              "image": null,
+              "description": "Caramelized banana with choco/toffeed syrup. Crispy and home made."
+            },
+            {
+              "name": "Very Very Berry Waffle",
+              "price": 249,
+              "food_type": "veg",
+              "image": null,
+              "description": "Golden brown waffle topped with wild berries, fresh cream and dusted w"
+            },
+            {
+              "name": "Nutty Blast Waffle",
+              "price": 249,
+              "food_type": "veg",
+              "image": null,
+              "description": "Topped with hazelnut sauce roasted nuts and ice cream. Crispy and home"
+            },
+            {
+              "name": "Red Velvet Waffle",
+              "price": 199,
+              "food_type": "veg",
+              "image": null,
+              "description": "Unique flavored. Must try. Crispy and home made."
+            }
+          ]
+        },
+        {
+          "category_name": "Desserts",
+          "items": [
+            {
+              "name": "Devil In Glass",
+              "price": 149,
+              "food_type": "veg",
+              "image": null,
+              "description": "Dbc with hot chocolate sauce soaked, topped with chocolate ice cream a"
+            },
+            {
+              "name": "Red Velvet Magic",
+              "price": 159,
+              "food_type": "veg",
+              "image": null,
+              "description": "Red velvet cake with strawberry ice cream, red coulis and gems."
+            },
+            {
+              "name": "Baked Apple Pie And Vanilla Parfait",
+              "price": 120,
+              "food_type": "veg",
+              "image": null,
+              "description": "Hot pie topped with vanilla ice cream and rosette."
+            },
+            {
+              "name": "Hot Chocolate Brownie",
+              "price": 120,
+              "food_type": "veg",
+              "image": null,
+              "description": "Brownie drowned in chocolate sauce and vanilla ice cream."
+            },
+            {
+              "name": "German Forest Sundae",
+              "price": 149,
+              "food_type": "veg",
+              "image": null,
+              "description": "Chocolate ice cream topped with cherry filling, vanilla ice cream, fre"
+            },
+            {
+              "name": "Duet Hearts Sundae",
+              "price": 129,
+              "food_type": "veg",
+              "image": null,
+              "description": "Vanilla and strawberry ice cream loaded with sauces and chocolate hear"
+            },
+            {
+              "name": "Froot Of Love Sundae",
+              "price": 149,
+              "food_type": "veg",
+              "image": null,
+              "description": "Strawberry and mango ice cream with red coulis and fruit loops/jujubes"
+            },
+            {
+              "name": "Banana Split Sundae",
+              "price": 150,
+              "food_type": "veg",
+              "image": null,
+              "description": "Split banana with tri flavored ice cream, sauce and nuts."
+            },
+            {
+              "name": "Rockey Road Sundae",
+              "price": 149,
+              "food_type": "veg",
+              "image": null,
+              "description": "Chocolate ice cream [large scoop] with nuts and marshmallows."
+            },
+            {
+              "name": "Midnight Dream Sundae",
+              "price": 120,
+              "food_type": "veg",
+              "image": null,
+              "description": "Blackcurrant ice cream with nuts and curaco."
+            }
+          ]
         }
       ]
     }
-  },
-  "type": "Listing"
-}
+  }
+]

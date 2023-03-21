@@ -165,6 +165,46 @@ class Scraper
         { image: img['src'], name: filename, restaurant_id: nil}
       end
     end
+
+    # Fetch items now
+    items = []
+    if details_page.link_with(text: 'Items')
+      page_item = details_page
+    elsif details_page.link_with(text: 'Delivery')
+      # tab_link_item = details_page.link_with(text: 'Delivery')
+      page_item = details_page
+    else
+      page_item = details_page
+    end
+    categories = page_item.search('.categoryListing') # select all elements with class name 'categoryListing'
+    result = []
+    categories.each do |category|
+    
+      category_name = category.at('h4.categoryHeading').text.strip # fetch the category name
+      
+      items = category.search('.itemDetails')
+      items_array = items.map do |item|
+        # puts item.at('article.itemInfo a')
+        item_name = item.at('article.itemInfo a').text.strip  # fetch the item name
+        item_description = item.search('.description').text.strip # fetch the item name
+        item_price = item.at('span.itemPrice').text.strip.scan(/\d+/).join.to_i # fetch the item price
+        veg_icon = item.at('img[src$="veg-icon.svg"]') # check if the item has a vegetarian icon
+        nonveg_icon = item.at('img[src$="non-veg-icon.svg"]') 
+        image_element = item.search('span.itemImageHolder img')[1] if item.search('img.itemImage').length > 1
+        image = image_element['src'] if image_element.present?
+        
+        if veg_icon
+          food_type = "veg"
+        else
+          food_type = "non-veg"
+        end
+        { name: item_name, price: item_price , food_type: food_type, image: image, description: item_description }
+      end
+      
+      result << { category_name: category_name, items: items_array }
+    end
+    # Fetch items now
+
     name = details_page.search('.merchant-name h1 a').text.strip if details_page.search('.merchant-name h1 a').present?
     location = details_page.at('a.merchant-locality').text.strip if details_page.at('a.merchant-locality').present?
     cuisines = details_page.search('.detail-sub-section.merchant-top-content a').map { |cuisine| cuisine.text.strip }.reject(&:empty?) if details_page.search('.detail-sub-section.merchant-top-content a').present?
@@ -185,7 +225,8 @@ class Scraper
         price_range: cost_for_two,
         rating: rating,
         description: description,
-        address: address
+        address: address,
+        category: result
       }
     }
 

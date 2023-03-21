@@ -59,6 +59,43 @@
         <% else %>
           <p>No related content found.</p>
         <% end %>
+        <h2>More Like This</h2>
+
+        <% if @restaurant_categories.present? %>
+           <div class="catalogItemsHolder">
+           <% @restaurant_categories.each do |category| %>
+            <article id="Magicpin Exclusive" class="categoryListing ">
+              <h4 class="categoryHeading"> <%= category.name %> </h4>
+              <div>
+                <% category.items.each do |item| %>
+                  <section class="categoryItemHolder">
+                    <div class="itemDetails itemWithImage">
+                      <span class="itemImageHolder">
+                        <% if item.food_type == "veg"%>
+                            <img class="foodDescIcon overlap err-handled" src="https://static.magicpin.com/samara/static/images/merchant/magicOrder/veg-icon.svg" alt="food type icon">
+                        <% else %>
+                            <img class="foodDescIcon overlap err-handled" src="https://static.magicpin.com/samara/static/images/merchant/magicOrder/non-veg-icon.svg" alt="food type icon">
+                        <% end %>
+                        <img class="itemImage err-handled lazyloaded" src="https://lh3.googleusercontent.com/FjP9yDrlBOF8i2SQLaCokHHi1OCjgrVq568xcewD4V4S3SDo33zpLKYvyJ6LsXYmL8xzUUUh7IiYS74YKNNjc1W_n52PzbrbFDy4GuXWwA" alt="Hyderabadi Dum Chicken Biryani (Boneless) (Serves 1)'s image">
+                      </span>
+                      <article class="itemInfo">
+                        <p class="itemName">
+                          <a target="_blank" href="#" rel="noopener" class="rel-handled" style="text-decoration: none;"><%= item.name %> </a>
+                        </p>
+                        <p>
+                          <span class="itemPrice">₹<%= item.price %></span>
+                        </p>
+                      </article>
+                    </div>
+                  </section>
+                <% end %>
+              </div>
+            </article>
+            <% end %>
+          </div>
+        <% else %>
+          <p>No related content found.</p>
+        <% end %>
 
         <h2>Images</h2>
 
@@ -77,3 +114,84 @@
     </div>
   </div>
 </div>
+
+<style>
+.catalogItemsHolder .categoryListing {
+    background: #fff;
+    padding: 16px;
+    padding-top: 12px;
+    margin-bottom: 8px;
+}
+.categoryListing .categoryHeading {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+    color: rgba(0,0,0,.87);
+}
+.categoryItemHolder {
+    margin: 12px 0 4px 0;
+    display: grid;
+    grid-template-columns: 3.5fr 1fr;
+    grid-gap: 6px;
+}
+.itemDetails.itemWithImage {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+.categoryItemHolder .itemCountHolder {
+    border-radius: 4px;
+    width: 100%;
+    display: flex;
+    font-size: 12px;
+    line-height: 16px;
+    flex-direction: column;
+}
+.itemDetails .itemImageHolder {
+    height: 72px;
+    width: 72px;
+    position: relative;
+    display: inline-block;
+}
+.foodDescIcon.overlap {
+    z-index: 1;
+    position: absolute;
+    margin: 0;
+}
+.itemImageHolder .itemImage {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 4px;
+    object-fit: cover;
+    cursor: pointer;
+}
+.itemInfo .itemName {
+    font-size: 14px;
+    line-height: 20px;
+    color: rgba(0,0,0,.87);
+}
+.itemInfo .itemPrice {
+    font-size: 12px;
+    line-height: 16px;
+}
+.itemInfo .itemPrice, .itemInfo .parentCategoryName {
+    font-size: 10px;
+    line-height: 12px;
+    color: rgba(0,0,0,0.87);
+    margin-top: 4px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.itemInfo .description {
+    font-size: 12px;
+}
+.itemInfo .description {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 4px;
+    color: rgba(0,0,0,0.54);
+}
+.description span {
+    font-weight: normal;
+}
+</style>

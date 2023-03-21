@@ -39,7 +39,6 @@ namespace :scrape do
         # Getting location Object to store its id and updating the params object
           restaurant_data[:restaurant][:location] = location
         # Getting location Object to store its id
-        File.write("output.json", JSON.pretty_generate(restaurant_data))
         restaurant = Restaurant.find_or_create_by(name: restaurant_data[:restaurant][:name]) do |r|
           r.attributes = restaurant_params(restaurant_data)
         end
@@ -59,6 +58,10 @@ namespace :scrape do
           
           create_restaurant_images(restaurant,restaurant_data[:restaurant][:images])
           create_restaurant_related_products(restaurant,restaurant_data[:restaurant][:more_like_this])
+          # File.write("output.json", JSON.pretty_generate(restaurant_data[:restaurant]))
+          puts "Now creating CategoryAndItems Object of #{restaurant_data[:restaurant][:category]}"
+          create_category_and_items(restaurant,restaurant_data[:restaurant][:category])
+          # puts "Created Object of #{restaurant_data[:restaurant][:category]}"
        
 
         else
@@ -145,10 +148,40 @@ namespace :scrape do
         end
       end
     end
+
+    #Save Category and items here
+    def create_category_and_items(restaurant,categories)
+      categories.each do |category_data|
+        category_name = category_data[:category_name]
+        items_data = category_data[:items]
+      
+        category = Category.find_or_create_by(name: category_name, restaurant_id: restaurant.id)
+      
+        if category.save
+          items_data.each do |item_data|
+            item_name = item_data[:name]
+            item_price = item_data[:price]
+            item_food_type = item_data[:food_type]
+            description = item_data[:description]
+            image = item_data[:image]
+        
+            item = Item.find_or_create_by(
+              name: item_name,
+              price: item_price,
+              food_type: item_food_type,
+              description: description,
+              image: image,
+              category_id: category.id,
+              restaurant_id: restaurant.id
+            )
+          end
+        end
+      end      
+    end
     private
 
     def restaurant_params(data)
-      data.fetch(:restaurant, {}).except(:restaurant_details, :more_like_this, :images)
+      data.fetch(:restaurant, {}).except(:restaurant_details, :more_like_this, :images, :category)
     end
     def restaurant_images_params(data)
       data.fetch(:images, {})

@@ -3,7 +3,7 @@ class RestaurantsController < ApplicationController
   before_action -> { require_role(:admin) }, only: [:admin_index]
   def index
     @locations = Location.all.order(name: :asc)
-    @restaurants = Restaurant.all.includes(:location).order(name: :asc)
+    @restaurants = Restaurant.all.includes(:location).order(name: :desc)
     @location = []
      # Check if a location parameter is provided
      if params[:location].present?
@@ -23,5 +23,6 @@ class RestaurantsController < ApplicationController
     @restaurant = Restaurant.find(params[:id])
     @more_like_this = @restaurant.more_like_this.order(created_at: :desc)
     @restaurant_images = @restaurant.restaurant_images.order(created_at: :desc)
+    @restaurant_categories = @restaurant.categories.order(created_at: :desc)
   end
 end

@@ -10,7 +10,29 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_20_105348) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_21_171443) do
+  create_table "categories", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "restaurant_id", null: false
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["restaurant_id"], name: "index_categories_on_restaurant_id"
+  end
+
+  create_table "items", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
+    t.bigint "restaurant_id", null: false
+    t.bigint "category_id", null: false
+    t.string "name"
+    t.string "description"
+    t.string "image"
+    t.decimal "price", precision: 10
+    t.string "food_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["category_id"], name: "index_items_on_category_id"
+    t.index ["restaurant_id"], name: "index_items_on_restaurant_id"
+  end
+
   create_table "locations", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
     t.string "address"
@@ -76,6 +98,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_20_105348) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "categories", "restaurants"
+  add_foreign_key "items", "categories"
+  add_foreign_key "items", "restaurants"
   add_foreign_key "more_like_this", "restaurants"
   add_foreign_key "restaurant_images", "restaurants"
   add_foreign_key "restaurants", "locations"
