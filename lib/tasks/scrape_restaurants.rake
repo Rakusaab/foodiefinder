@@ -19,10 +19,12 @@ namespace :scrape do
        Url.all.each do |url|
         scraper = Scraper.new(url.url)
         # data = scraper.scrape
-        data = scraper.restaurant_data_magicpin(url.url)
-
-    # Creating Output file to test the Data uncomment to test
-    File.write("output.json", JSON.pretty_generate(data))
+        if url.name == "Zomato"
+          data = scraper.restaurant_data_zomato(url.url)
+        else
+          data = scraper.restaurant_data_magicpin(url.url)
+        end
+        # File.write("output.json", JSON.pretty_generate(data)) 
       # Save Restaurant Data
         create_restaurant(data)
       # Save Restaurant Data
@@ -56,10 +58,10 @@ namespace :scrape do
 
           puts "Now creating RestaurantImage Object of #{restaurant.name}"
           
-          create_restaurant_images(restaurant,restaurant_data[:restaurant][:images])
+          # create_restaurant_images(restaurant,restaurant_data[:restaurant][:images])
           create_restaurant_related_products(restaurant,restaurant_data[:restaurant][:more_like_this])
           # File.write("output.json", JSON.pretty_generate(restaurant_data[:restaurant]))
-          puts "Now creating CategoryAndItems Object of #{restaurant_data[:restaurant][:category]}"
+          # puts "Now creating CategoryAndItems Object of #{restaurant_data[:restaurant][:category]}"
           create_category_and_items(restaurant,restaurant_data[:restaurant][:category])
           # puts "Created Object of #{restaurant_data[:restaurant][:category]}"
        
@@ -156,7 +158,7 @@ namespace :scrape do
         items_data = category_data[:items]
       
         category = Category.find_or_create_by(name: category_name, restaurant_id: restaurant.id)
-      
+      puts "category #{category}"
         if category.save
           items_data.each do |item_data|
             item_name = item_data[:name]

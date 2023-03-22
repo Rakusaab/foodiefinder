@@ -63,6 +63,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_21_171443) do
 
   create_table "restaurants", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
+    t.string "web_name"
     t.text "description"
     t.string "phone"
     t.string "price_range"

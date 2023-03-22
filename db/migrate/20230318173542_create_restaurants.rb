@@ -2,6 +2,7 @@ class CreateRestaurants < ActiveRecord::Migration[7.0]
   def change
     create_table :restaurants do |t|
       t.string :name
+      t.string :web_name, null: true
       t.text :description, null: true
       t.string :phone, null: true
       t.string :price_range, null: true

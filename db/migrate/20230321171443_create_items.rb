@@ -4,7 +4,7 @@ class CreateItems < ActiveRecord::Migration[7.0]
       t.references :restaurant, null: false, foreign_key: true
       t.references :category, null: false, foreign_key: true
       t.string :name
-      t.string :description
+      t.text :description
       t.string :image
       t.decimal :price
       t.string :food_type

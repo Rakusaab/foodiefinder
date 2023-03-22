@@ -49,8 +49,10 @@
                         <div class="merchant-logo-holder">
                             <img loading="lazy" src="<%= restaurant.logo_img %>" alt="<%= restaurant.name %>" class="merchant-logo err-handled" onerror="this.alt='';recordBrokenImages(this,false,1);">
                         </div>
+                              
                         <div class="basic-info">
                             <h2 title="<%= restaurant.name %>" class="merchant-name">
+                         
                             <span>
                                 <a href="<%= restaurant_path(restaurant) %>" class="rel-handled"><%= restaurant.name %></a>
                             </span>
@@ -83,6 +85,7 @@
                             </div>
                         </div>
                         </div>
+                         <h4>I am from <%= restaurant.web_name %></h4>
                     </section>
                     </div>
                     <div class="actionables"></div>

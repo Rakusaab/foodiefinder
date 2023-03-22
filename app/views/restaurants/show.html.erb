@@ -3,7 +3,7 @@
     <div class="col-md-12">
       <div class="restaurant-details">
         <h2><%= @restaurant.name %></h2>
-
+ <h5>I am from <%= @restaurant.web_name %></h5>
         <% if @restaurant.cover_img.present? %>
           <%= image_tag @restaurant.cover_img, class: "cover-image err-handled" %>
         <% end %>
@@ -21,6 +21,7 @@
             <p><strong>Price range:</strong> <%= @restaurant.price_range %></p>
             <p><strong>Rating:</strong> <%= @restaurant.rating %></p>
             <p><strong>Address:</strong> <%= @restaurant.address %></p>
+           
           </div>
           <div class="col-md-6">
             <p><strong>Cuisines:</strong> 
@@ -59,7 +60,7 @@
         <% else %>
           <p>No related content found.</p>
         <% end %>
-        <h2>More Like This</h2>
+        <h2>Items</h2>
 
         <% if @restaurant_categories.present? %>
            <div class="catalogItemsHolder">

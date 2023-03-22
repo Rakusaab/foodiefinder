@@ -51,6 +51,7 @@ class Scraper
           restaurant = {
             restaurant: {
               name: name,
+              web_name: 'Magicpin',
               location: location,
               cuisines: cuisines,
               cover_img: cover_img,
@@ -215,7 +216,7 @@ class Scraper
         location: location,
         cuisines: cuisines,
         save_percentage: nil,
-  
+        web_name: 'Magicpin',
         phone: phones,
         cover_img: cover_img,
         logo_img: logo_img,
@@ -234,7 +235,77 @@ class Scraper
   end
 
   def restaurant_data_zomato(url)
-    return "Coming Soon!"
+    puts url
+    restaurants = []
+    page = @agent.get(url)
+    doc = Nokogiri::HTML(page.body)
+
+    # script_tag = page.search("//script[contains(text(),'window.__PRELOADED_STATE__')]").first
+    script_tag = page.search('//script[contains(text(), "window.__PRELOADED_STATE__")]').first
+    json_data = script_tag.content.match(/JSON.parse\("(.*)"\);/)[1].gsub('\\"', '"').gsub('\\\\', '\\')
+    data = JSON.parse(json_data)
+    res_id = data["pageUrlMappings"].values[0]['resId']
+
+    name =  data['pages']['restaurant']["#{res_id}"]['sections']['SECTION_BASIC_INFO']['name']
+    location =  data['pages']['restaurant']["#{res_id}"]['sections']['SECTION_RES_HEADER_DETAILS']['LOCALITY']['text']
+    cuisines =  data['pages']['restaurant']["#{res_id}"]['sections']['SECTION_BASIC_INFO']['cuisine_string'].split(',')
+    rating =  data['pages']['restaurant']["#{res_id}"]['sections']['SECTION_BASIC_INFO']['rating']['rating_text']
+    cover_img = data['entities']['IMAGES'].values[0]['url']
+    description =  data['pages']['restaurant']["#{res_id}"]['navbarSection'][1]['pageDescription'] if data['pages']['restaurant']["#{res_id}"]['navbarSection'].present?
+    address =  data['pages']['restaurant']["#{res_id}"]['sections']['SECTION_RES_CONTACT']['address']
+    phone =  data['pages']['restaurant']["#{res_id}"]['sections']['SECTION_RES_CONTACT']['phoneDetails']['phoneStr'].split(',')
+    
+    categories =  data['pages']['restaurant']["#{res_id}"]['navbarSection'][1]['children'] if data['pages']['restaurant']["#{res_id}"]['navbarSection'].present?
+    
+    result = []
+    categories.each do |category|
+      cat_items =  data['pages']['restaurant']["#{res_id}"]['order']['menuList']['menus'] 
+      cat_items.map do |item|
+        category_name = item['menu']['name'] # fetch the category name
+        real_items = item['menu']['categories'][0]['category']['items']
+        items_array = real_items.map do |real_item|
+          item_name =   real_item['item']['name'] # fetch the item name
+          item_description = real_item['item']['desc'] # fetch the item name
+          item_price = real_item['item']['min_price'] # fetch the item name
+          dietary_slugs = real_item['item']['dietary_slugs'][0] # fetch the item name
+          image = real_item['item']['item_image_url'] # fetch the item name
+          # puts item_name, item_description, item_price, dietary_slugs,image
+          if dietary_slugs == "veg"
+            food_type = "veg"
+          else
+            food_type = "non-veg"
+          end
+          { name: item_name, price: item_price , food_type: food_type, image: image, description: item_description }
+        end
+        result << { category_name: category_name, items: items_array }
+      end
+      
+    end
+    # File.write("output.json", JSON.pretty_generate(result)) 
+   
+    # puts result
+    restaurant = {
+        restaurant: {
+          name: name,
+          web_name: 'Zomato',
+          location: location,
+          cuisines: cuisines,
+          cover_img: cover_img,
+          logo_img: nil,
+          save_percentage: nil,
+          phone: phone,
+          images: nil,
+          price_range: nil,
+          rating: rating,
+          description: description,
+          address: address,
+          more_like_this: nil,
+          category: result
+        },
+        type: 'Listing'
+      }
+      restaurants << restaurant
+      restaurants
   end
 
   def restaurant_data_swiggy(url)
